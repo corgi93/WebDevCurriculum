@@ -15,4 +15,4 @@ VCS allows developers track the history of changes, so we can run tests, fix bug
 * `git push` updates the remote repository with local commits to a branch.
 * `git pull` updates local copy with remote repository.
 * `git branch` shows branches of the repository.
-* `git stash` 
+* `git stash` temporarily saves files that are 'Modified' and 'Tracked' and are in 'Staging Area'.
