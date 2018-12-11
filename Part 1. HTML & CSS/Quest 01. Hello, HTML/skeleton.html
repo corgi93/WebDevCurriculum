@@ -2,25 +2,183 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<!-- TODO: 또 무엇이 필요할까요? -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Github Clone</title>
 	</head>
 	<body>
 		<header>
-			<!-- TODO: 상단의 회색 부분은 어떻게 처리하면 좋을까요? -->
+			<section class="header__title">
+				<!-- Home Logo -->
+				<img src="github.svg" alt="Github Logo">
+				<!-- Search input -->
+				<input type="text" placeholder="Search" name="search">
+				<!-- Main Navigation -->
+			</section>
+			<nav class="header__navigation">
+				<ul>
+					<li><a href="#">Pull Request</a></li>
+					<li><a href="#">Issues</a></li>
+					<li><a href="#">Marketplace</a></li>
+					<li><a href="#">Explore</a></li>
+				</ul>
+			</nav>
+			<!-- Links -->
+			<section class="header__links">
+				<a href="#">
+					<img src="" alt="Notifications">
+				</a>
+				<a href="#">
+					<img src="" alt="Add New">
+				</a>
+				<a href="#">
+					<img src="" alt="Profile">
+				</a>
+			</section>
 		</header>
 
 		<section class="main">
 			<header class="main-header">
-				<!-- TODO: 메인의 헤더 부분 -->
+				<!-- Repository name -->
+				<h3 class="main-header__title">
+					<a href="#">KnowRe</a>
+					<span> / </span>
+					<a href="#">WebDevCurriculum</a>
+				</h3>
+				<!-- Buttons -->
+				<section class="main-header__buttons">
+					<div>
+						<button>Unwatched</button>
+						<a href="#">19</a>
+					</div>
+					<div>
+						<button>Star</button>
+						<a href="#">113</a>
+					</div>
+					<div>
+						<button>Fork</button>
+						<a href="#">106</a>
+					</div>
+				</section>
+				<!-- Repository navigation -->
+				<nav class="main-header__navigation">
+					<ul>
+						<li><a href="#">Code</a></li>
+						<li><a href="#">Issues</a></li>
+						<li><a href="#">Pull Requests</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Insights</a></li>
+					</ul>
+				</nav>
 			</header>
 
 			<section class="main-detail">
-				<!-- TODO: 메인의 부분 -->
+				<!-- Repository Description -->
+				<p>KnowRe web development curriculum for noobs</p>
+				<!-- Repository Status -->
+				<section class="main-detail__status">
+					<li><a href="#">44 commits</a></li>
+					<li><a href="#">1 branch</a></li>
+					<li><a href="#">0 releases</a></li>
+					<li><a href="#">2 contributors</a></li>
+					<li><a href="#">MIT</a></li>
+				</section>
+				<!-- Buttons -->
+				<section class="main-detail__buttons">
+					<div>
+						<button>Branch: master</button>
+						<button>New pull request</button>
+					</div>
+					<div>
+						<button>Create new file</button>
+						<button>Upload files</button>
+						<button>Find file</button>
+						<button>Clone or download</button>
+					</div>
+				</section>
+				<!-- Last commit info -->
+				<section class="main-detail__last-commit">
+					<div>
+						<span>KnowRe</span>
+						<span>Quest 2 added constraint</span>
+					</div>
+					<div>
+						<span>Last commit 8a3080e</span>
+						<span>on 7 Aug 2016</span>
+					</div>
+				</section>
+				<!-- Files -->
+				<ul class="main-detail__file-list">
+					<li>
+						<div>
+							<a href="#" class="folder">Part 0. git/Quest 00. Hello, git</a>
+						</div>
+						<div>
+							Part 2 finished
+						</div>
+						<div>
+							2 years ago
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#" class="folder">Part 1. HTML & CSS</a>
+						</div>
+						<div>
+							Quest 02 added constraint
+						</div>
+						<div>
+							2 years ago
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#" class="file">README.md</a>
+						</div>
+						<div>
+							Fix: Removed advertisement
+						</div>
+						<div>
+							2 years ago
+						</div>
+					</li>
+				</ul>
+				<!-- README.md -->
+				<article class="readme">
+					<div class="readme__title">
+						<h3>README.md</h3>
+					</div>
+					<div class="readme__content">
+						<h1>KnowRe web development curriculum 2018</h1>
+					</div>
+				</article>
 			</section>
 		</section>
 
 		<footer>
 			<!-- TODO: 하단의 Copyright, Terms, Privacy 등은 어떻게 처리하면 좋을까요? -->
+			<!-- Links (left) -->
+			<ul>
+				<li>&copy; 2018 Github, Inc.</li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Security</a></li>
+				<li><a href="#">Status</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+			<!-- Link (center) -->
+			<a href="#">
+				<img src="github.svg" alt="Github Logo">
+			</a>
+			<!-- Links (right) -->
+			<ul>
+				<li><a href="#">Contact Github</a></li>
+				<li><a href="#">API</a></li>
+				<li><a href="#">Training</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
 		</footer>
 	</body>
 </html>
