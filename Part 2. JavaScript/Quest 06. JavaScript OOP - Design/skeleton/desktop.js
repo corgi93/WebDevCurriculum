@@ -1,15 +1,52 @@
 class Desktop {
-	/* TODO: Desktop 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
+	constructor(width = '100%', height = '100%') {
+		this.element = document.getElementsByClassName('desktop')[0];
+		this.element.style.width = width;
+		this.element.style.height = height;
+
+		this.element.addEventListener('resize', this.onResize);
+	}
+
+	onResize() {}
 };
 
 class Icon {
-	/* TODO: Icon 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
+	constructor(parent, label) {
+		this.parent = parent;
+		this.label = label;
+	}
+
+	createNode() {}
+
+	onMouseDown() {}
+
+	onDrag() {}
+
+	onMouseUp() {}
 };
 
-class Folder {
-	/* TODO: Folder 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
+class Folder extends Icon {
+	constructor(parent, label) {
+		super(parent, label);
+	}
+
+	onDoubleClick() {}
 };
 
 class Window {
-	/* TODO: Window 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
+	constructor(title, width = '80%', height = '80%') {
+		this.title = title;
+		this.width = width;
+		this.height = height;
+	}
+
+	open() {}
+
+	close() {}
+
+	onMouseDown() {}
+
+	onDrag() {}
+
+	onMouseUp() {}
 };
