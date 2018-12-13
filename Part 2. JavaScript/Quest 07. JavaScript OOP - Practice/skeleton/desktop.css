@@ -1,1 +1,150 @@
 /* TODO: 자유롭게 바탕화면 시스템의 CSS를 만들어 보세요! */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.desktop {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?cs=srgb&dl=abstract-astro-astronomy-956999.jpg&fm=jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop__footer {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop__footer h1 {
+  margin: 0;
+}
+
+.desktop__footer__controls {
+  display: flex;
+  align-items: center;
+}
+
+.desktop__footer__controls__button-group-label {
+  color: rgb(120, 120, 120);
+  font-size: 0.85rem;
+}
+
+.desktop__footer__controls__button-group button:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+  margin-right: 0;
+}
+
+.desktop__footer__controls__button-group button:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin-left: 0;
+}
+
+.desktop__footer__controls__button {
+  background: rgb(200, 200, 200);
+  color: rgb(100, 100, 100);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.desktop__footer__controls__button:hover {
+  background: rgb(240, 240, 240);
+}
+
+.desktop__body {
+  flex: 1;
+  position: relative;
+}
+
+.icon {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.icon.transparent {
+  opacity: 0;
+}
+
+.icon__svg {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  fill: white;
+  cursor: pointer;
+}
+
+.folder .icon__svg {
+  fill: yellow;
+}
+
+.icon__label {
+  color: white;
+  text-align: center;
+}
+
+.window {
+  background: rgba(255, 255, 255, 9.5);
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(0);
+  transition: 0.25s transform;
+  z-index: 100;
+}
+
+.window.open {
+  transform: scale(1);
+}
+
+.window__header {
+  cursor: move;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(225, 225, 225, 9.5);
+}
+
+.window__header h3 {
+  flex: 1;
+  margin: 0;
+}
+
+.window__header button {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.window__header button:hover {
+  background: rgb(200, 200, 200);
+  color: white;
+}
